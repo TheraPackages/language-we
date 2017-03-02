@@ -1,0 +1,10 @@
+'.source.we':
+	'editor':
+		# 设置个性化注释
+		'commentStart': '<!-- '
+		'commentEnd': ' -->'
+		# 折叠时隐藏匹配的结尾字符串
+		'foldEndPattern': "</(?:template|container|script|style|div)>"
+		# 控制标签的缩进
+		'increaseIndentPattern': '<(?:template|container|style|script|div)>(?!.*</(?:template|container|style|script|div)>)'
+		'decreaseIndentPattern': '^\\s*</(?:template|container|style|script|div)>'
