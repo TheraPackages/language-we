@@ -1,4 +1,4 @@
 ## Weex Language Syntax Highlighting
 
 ## License
-[MIT](./LICENSE.md)
+[MIT](https://raw.githubusercontent.com/alibaba/Thera/master/README.md)
