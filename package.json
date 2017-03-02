@@ -1,0 +1,27 @@
+{
+	"author": {
+		"name": "",
+		"email": ""
+	},
+	"bugs": {
+		"url": ""
+	},
+	"dependencies": {},
+	"description": "Add syntax highlighting and snippets to Weex files in Atom",
+	"devDependencies": {},
+	"engines": {
+		"atom": ">=0.50.0"
+	},
+	"homepage": "",
+	"license": "MIT",
+	"name": "language-we",
+	"optionalDependencies": {},
+	"private": false,
+	"readme": "",
+	"readmeFilename": "README.md",
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"version": "0.0.7"
+}
