@@ -70,7 +70,7 @@
 	}
 	{
 		# 设置tag的颜色
-		'begin': '(</?)((?i:template|container|text|image|div|list|cell|input|a|name)\\b)'
+		'begin': '(</?)((?i:template|container|text|image|div|list|cell|input|a|name|slider|img)\\b)'
 		'beginCaptures':
 			'1':
 				'name': 'punctuation.definition.tag.html'
