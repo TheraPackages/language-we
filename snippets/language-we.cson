@@ -1,53 +1,53 @@
-'.source.we':
-  'template':
-    'prefix': 'template'
-    'body': '<template>\n\t${0}\n</template>'
-  'container':
-    'prefix': 'container'
-    'body': '<container>\n\t${0}\n</container>'
-  "style":
-    'prefix': 'style'
-    'body': '<style>\n\t${0}\n</style>'
-  "script":
-    'prefix': 'script'
-    'body': '<script>\n\t${0}\n</script>'
-  "image":
-    'prefix': 'image'
-    'body': '<image class=\"${1:CLASS}\" src="${0:URL}" />'
-  "text":
-    'prefix': 'text'
-    'body': '<text class=\"${1:CLASS}\">${0:TEXT}</text>'
-  "div":
-    'prefix': 'div'
-    'body': '<div>\n\t${0}\n</div>'
-  "name":
-    'prefix': 'name'
-    'body': '<name>${0}</name>'
-  "input":
-    'prefix': 'input'
-    'body': '<input class=\"${1:CLASS}\" type=\"${2:TYPE}\" value=\"${3:VALUE}\" />'
-  "a":
-    'prefix': 'a'
-    'body': '<a class=\"${1:CLASS}\">${0}</a>'
-
-'.source.we .css, .source.we .tag, .source.we .js, .source.we .embedded':
-  'template':
-    'prefix': 'template'
-  'container':
-    'prefix': 'container'
-  "style":
-    'prefix': 'style'
-  "script":
-    'prefix': 'script'
-  "image":
-    'prefix': 'image'
-  "text":
-    'prefix': 'text'
-  "div":
-    'prefix': 'div'
-  "name":
-    'prefix': 'name'
-  "input":
-    'prefix': 'input'
-  "a":
-    'prefix': 'a'
+# '.source.we':
+#   'template':
+#     'prefix': 'template'
+#     'body': '<template>\n\t${0}\n</template>'
+#   'container':
+#     'prefix': 'container'
+#     'body': '<container>\n\t${0}\n</container>'
+#   "style":
+#     'prefix': 'style'
+#     'body': '<style>\n\t${0}\n</style>'
+#   "script":
+#     'prefix': 'script'
+#     'body': '<script>\n\t${0}\n</script>'
+#   "image":
+#     'prefix': 'image'
+#     'body': '<image class=\"${1:CLASS}\" src="${0:URL}" />'
+#   "text":
+#     'prefix': 'text'
+#     'body': '<text class=\"${1:CLASS}\">${0:TEXT}</text>'
+#   "div":
+#     'prefix': 'div'
+#     'body': '<div>\n\t${0}\n</div>'
+#   "name":
+#     'prefix': 'name'
+#     'body': '<name>${0}</name>'
+#   "input":
+#     'prefix': 'input'
+#     'body': '<input class=\"${1:CLASS}\" type=\"${2:TYPE}\" value=\"${3:VALUE}\" />'
+#   "a":
+#     'prefix': 'a'
+#     'body': '<a class=\"${1:CLASS}\">${0}</a>'
+#
+# '.source.we .css, .source.we .tag, .source.we .js, .source.we .embedded':
+#   'template':
+#     'prefix': 'template'
+#   'container':
+#     'prefix': 'container'
+#   "style":
+#     'prefix': 'style'
+#   "script":
+#     'prefix': 'script'
+#   "image":
+#     'prefix': 'image'
+#   "text":
+#     'prefix': 'text'
+#   "div":
+#     'prefix': 'div'
+#   "name":
+#     'prefix': 'name'
+#   "input":
+#     'prefix': 'input'
+#   "a":
+#     'prefix': 'a'
