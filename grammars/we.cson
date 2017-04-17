@@ -27,7 +27,7 @@
   }
   {
     # 设置tag的颜色
-    'begin': '(</?)((?i:template|container|text|image|div|list|cell|input|a|name|img)\\b)'
+    'begin': '(</?)((?i:template|container|text|textarea|slider|image|div|list|cell|input|a|name|img)\\b)'
     'beginCaptures':
       '1':
         'name': 'punctuation.definition.tag.html'
@@ -89,6 +89,25 @@
     'patterns': [
       {
         'include': 'source.js'
+      }
+    ]
+  }
+  {
+    # 设置tag的颜色
+    'begin': '(</?)((?i:[a-zA-Z0-9_-]*)\\b)'
+    'beginCaptures':
+      '1':
+        'name': 'punctuation.definition.tag.extend.html'
+      '2':
+        'name': 'entity.name.tag.extend.structure.any.html'
+    'end': '(>)'
+    'endCaptures':
+      '1':
+        'name': 'punctuation.definition.tag.extend.html'
+    'name': 'meta.tag'
+    'patterns': [
+      {
+        'include': '#tag-stuff'
       }
     ]
   }
