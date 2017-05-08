@@ -1,7 +1,7 @@
 'scopeName': 'source.we'
 'comment': 'Weex Syntax: version 0.1'
 'fileTypes': [
-  'we',
+  'we', 'vue'
 ]
 
 'firstLineMatch': '\\A#!.*?\\bweex\\b'
@@ -61,11 +61,12 @@
   }
   {
     # 'begin': '<((?i:style))\\s*>' 为了标签内部就开始生效作用域，使用下面的方式
-    'begin': '(?:^\\s+)?(<)((?i:style))\\b(?![^>]*/>)'
+    # 'begin': '(?:^\\s+)?(<)((?i:style))\\b(?![^>]*/>)' 为了style可以有自己的属性使用下面的方式
+    'begin': '<((?:style))(\\s+scoped)?\\s*>'
     'beginCaptures':
       '2':
         'name': 'entity.name.tag.structure.any.html'
-    'end': '</((?i:style))\\s*>'
+    'end': '</((?i:style))[^>]*>'
     'endCaptures':
       '1':
         'name': 'entity.name.tag.structure.any.html'
@@ -104,7 +105,7 @@
     'endCaptures':
       '1':
         'name': 'punctuation.definition.tag.extend.html'
-    'name': 'meta.tag'
+    'name': 'meta.tag.any'
     'patterns': [
       {
         'include': '#tag-stuff'
