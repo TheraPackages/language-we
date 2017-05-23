@@ -8,3 +8,19 @@
 		# 控制标签的缩进
 		'increaseIndentPattern': '<(?:template|container|style|script|div)>(?!.*</(?:template|container|style|script|div)>)'
 		'decreaseIndentPattern': '^\\s*</(?:template|container|style|script|div)>'
+    # 'increaseIndentPattern': '(?x)
+    #     \\{ [^}"\']* $
+    #   | \\[ [^\\]"\']* $
+    #   | \\( [^)"\']* $
+    #   '
+    # 'decreaseIndentPattern': '(?x)
+    #     ^ \\s* (\\s* /[*] .* [*]/ \\s*)* [}\\])]
+    #   '
+    # 'increaseIndentPattern': '(?x)
+    #     \\{ [^}"\']* $
+    #   | \\[ [^\\]"\']* $
+    #   | \\( [^)"\']* $
+    #   '
+    # 'decreaseIndentPattern': '(?x)
+    #     ^ \\s* (\\s* /[*] .* [*]/ \\s*)* [}\\])]
+    #   '

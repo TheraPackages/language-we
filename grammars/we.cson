@@ -1,7 +1,7 @@
 'scopeName': 'source.we'
 'comment': 'Weex Syntax: version 0.1'
 'fileTypes': [
-  'we', 'vue'
+  'we'
 ]
 
 'firstLineMatch': '\\A#!.*?\\bweex\\b'
@@ -36,7 +36,7 @@
     'end': '(>)'
     'endCaptures':
       '1':
-        'name': 'punctuation.definition.tag.html'
+        'name': 'punctuation.definition.tag.html.end'
     'name': 'meta.tag'
     'patterns': [
       {
