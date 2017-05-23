@@ -14,7 +14,7 @@
 	},
 	"homepage": "",
 	"license": "MIT",
-	"name": "language-we",
+	"name": "language-weexvue",
 	"optionalDependencies": {},
 	"private": false,
 	"readme": "",
@@ -23,5 +23,5 @@
 		"type": "git",
 		"url": ""
 	},
-	"version": "0.0.7"
+	"version": "0.2.1"
 }

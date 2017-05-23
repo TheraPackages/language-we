@@ -1,11 +1,11 @@
-'scopeName': 'source.we'
-'comment': 'Weex Syntax: version 0.1'
+'scopeName': 'source.weexvue'
+'comment': 'WeexVue Syntax: version 0.1'
 'fileTypes': [
-  'we', 'vue'
+  'vue'
 ]
 
-'firstLineMatch': '\\A#!.*?\\bweex\\b'
-'name': 'Weex'
+'firstLineMatch': '\\A#!.*?\\bweexvue\\b'
+'name': 'WeexVue'
 
 'patterns': [
   {
@@ -36,7 +36,7 @@
     'end': '(>)'
     'endCaptures':
       '1':
-        'name': 'punctuation.definition.tag.html'
+        'name': 'punctuation.definition.tag.html.end'
     'name': 'meta.tag'
     'patterns': [
       {
@@ -114,6 +114,53 @@
   }
 ]
 'repository':
+  "vue-directive":
+    name: "meta.directive.vue"
+    begin: "(?:\\b(v-)|(:|@))([a-zA-Z][0-9a-zA-Z\\-\\:\\.]+)\\s*(=)"
+    end: "(?<='|\")"
+    captures:
+      "1":
+        name: "entity.other.attribute-name.html"
+      "2":
+        name: "punctuation.separator.key-value.html"
+      "3":
+        name: "entity.other.attribute-name.html"
+      "4":
+        name: "punctuation.separator.key-value.html"
+    patterns:[
+      {
+        name: "source.directive.vue"
+        begin: "\""
+        beginCaptures:
+          "0":
+            name: "punctuation.definition.string.begin.html"
+        end: "\""
+        endCaptures:
+          "0":
+            name: "punctuation.definition.string.end.html"
+        patterns: [
+          {
+            include: "source.js"
+          }
+        ]
+      }
+      {
+        name: "source.directive.vue"
+        begin: "'"
+        beginCaptures:
+          "0":
+            name: "punctuation.definition.string.begin.html"
+        end: "'"
+        endCaptures:
+          "0":
+            name: "punctuation.definition.string.end.html"
+        patterns: [
+          {
+            include: "source.js"
+          }
+        ]
+      }
+    ]
   'tag-id-attribute':
     'begin': '[\\s\\t](id)\\b\\s*(=)'
     'captures':
@@ -175,6 +222,9 @@
     'name': 'string.quoted.single.html'
   'tag-stuff':
     'patterns': [
+      {
+        'include': "#vue-directive"
+      }
       {
         'include': '#tag-id-attribute'
       }
